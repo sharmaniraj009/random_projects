@@ -9,8 +9,10 @@ integers = str(random.randint(0,9))
 
 pwd = letters + special + integers
 
+length = int(input("enter the length of the required password : "))
+
 final = ""
-for i in range(12):
+for i in range(length):
     final += random.choice(pwd)
 
 print(final + random.choice(special_chars))
